@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Mask Recycling Analytics/Receiver</title>
+
+    <link rel="stylesheet" href="../assets/css/maicons.css">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+
+    <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+
+    <link rel="stylesheet" href="../assets/css/theme.css">
+
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+
+                data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"%\"",
+                    indexLabel: "{label} {y}",
+                    dataPoints: [
+                        { y: 35.45, label: "Nashik" },
+                        { y: 43.31, label: "Mumbai" },
+                        { y: 20.06, label: "Pune" }
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Back to top button -->
+    <div class="back-to-top"></div>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="text-white">M</span><span
+                        class="text-primary">R</span><span class="text-white">A</span></a>
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport"
+                    aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupport">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donar.html">Donar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="municipal.html">Municipal</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="receiver.html">Receiver</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="newsapi.html">Live News</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary ml-lg-3" href="https://www.youtube.com/watch?v=_mszrslqj7s">Learn More</a>
+                        </li>
+                    </ul>
+                </div> <!-- .navbar-collapse -->
+            </div> <!-- .container -->
+        </nav>
+    </header>
+
+    <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/ReceiverPage.jpg);">
+        <div class="hero-section">
+            <div class="container text-center wow zoomIn">
+                <span class="subhead"><span class="text-primary">Create Best Out Of Waste</span></span>
+                <h1 class="display-4">Saving Mother Nature</h1>
+                <a href="#check" class="btn btn-primary">See Availability</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary"><br></div>
+    <center>
+        <div class="bg-dark">
+            <div class="page-section pb-0">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="wow fadeInUp">
+                            <h1><span class="text-white">How masks are disposed?</span>
+                            </h1>
+                            <p class="text-grey mb-4">University in Melbourne, Australia, have carried out a study to
+                                show how disposable face masks could be recycled to make roads and hard bricks.
+
+                                According to the researchers, this could be a viable alternative to deal with
+                                pandemic-generated waste.
+
+                                Their study demonstrated that using the recycled face mask material to make just one km
+                                of a two-lane road would use up about 3 million masks, preventing 93 tonnes of waste
+                                from going to landfill.
+
+                                For this, the researchers have developed a new road-making material that is a mix of
+                                shredded single-use face masks and processed building rubble designed to meet civil
+                                engineering safety standards.
+
+                                Their findings show that the face masks help to add stiffness and strength to the final
+                                product, designed to be used for base layers of roads and pavements.
+
+                            </p>
+                            <a href="https://www.thehindubusinessline.com/news/science/covid-19-disposable-face-masks-could-be-recycled-to-make-roads-study/article33738225.ece"
+                                class="btn btn-primary">Learn More</a><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="check">
+            <div class="bg-primary"><br></div>
+            <div class="bg-dark">
+                <h1><span class="text-white">Percentage of masks collected</span></h1>
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
+    </center>
+    <div class="bg-primary"><br></div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row px-md-3">
+                <div class="col-sm-6 col-lg-3 py-3"></div>
+                <div class="col-sm-6 col-lg-3 py-3">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Donar</a></li>
+                        <li><a href="#">Municipal</a></li>
+                        <li><a href="#">Receiver</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3 py-3">
+                    <h5>Contact</h5>
+                    <p class="footer-link mt-2">Nashik,Maharashtra,India</p>
+                    <a href="#" class="footer-link">+91-9*********</a><br>
+                    <a href="#" class="footer-link">mra@temporary.net</a>
+
+                    <h5 class="mt-3">Social Media</h5>
+                    <div class="footer-sosmed mt-3">
+                        <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+                        <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <center>
+                <p id="copyright">Copyright &copy; 2021 MRA Team & MACode ID</a>. All right reserved</p>
+            </center>
+        </div>
+    </footer>
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <script src="../assets/vendor/wow/wow.min.js"></script>
+
+    <script src="../assets/js/theme.js"></script>
+
+</body>
